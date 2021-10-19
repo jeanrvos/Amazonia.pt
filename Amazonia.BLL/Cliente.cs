@@ -5,4 +5,7 @@ class Cliente
     public string UserName { get; set; }
     public string Password { get; set; }
 
+    public string NumeroContribuinte { get; set; }
+
+
 }
