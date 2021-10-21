@@ -1,5 +1,4 @@
-
-namespace Amazonia.DAL
+namespace Amazonia.DAL.Entidades
 {
     public class LivroDigital : Livro
     {
