@@ -11,6 +11,7 @@ public class RepositorioLivro : IRepositorio<Livro>
     public RepositorioLivro()
     {
         Lista = new List<Livro>();
+
         var lotrImp = new LivroImpresso
         {
             Nome = "O Senhor dos Aneis",
@@ -21,14 +22,19 @@ public class RepositorioLivro : IRepositorio<Livro>
         var lotrAud = new AudioLivro
         {
             Nome = "O Senhor dos Aneis",
-            Autor = "J.R.R. Tolkien"
+            Autor = "J.R.R. Tolkien",
+            DuracaoLivro = 6,
+            FormatoFicheiro = "MP3"
         };
         Lista.Add(lotrAud);
 
         var lotrEbook = new LivroDigital
         {
             Nome = "O Senhor dos Aneis",
-            Autor = "J.R.R. Tolkien"
+            Autor = "J.R.R. Tolkien",
+            InformacoesLicenca = "Gratuito ....",
+            FormatoFicheiro = "PDF",
+            TamanhoEmMB = 100
         };
         Lista.Add(lotrEbook);
 
