@@ -45,9 +45,6 @@ jobs:
         shell: powershell
         run: |
           .\.sonar\scanner\dotnet-sonarscanner begin /k:"JonatasAfonso_Amazonia.pt" /o:"rumosamazonia" /d:sonar.login="${{ secrets.SONAR_TOKEN }}" /d:sonar.host.url="https://sonarcloud.io"
-          uses: actions/setup-dotnet@v1
-          with:
-            dotnet-version: 5.0.x
           dotnet restore
           dotnet build --no-restore
           dotnet test --no-build --verbosity normal
