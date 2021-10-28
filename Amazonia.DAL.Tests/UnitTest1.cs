@@ -1,6 +1,6 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-namespace Amazonia.BLL.Tests
+namespace Amazonia.DAL.Tests
 {
     [TestClass]
     public class UnitTest1
@@ -8,13 +8,7 @@ namespace Amazonia.BLL.Tests
         [TestMethod]
         public void TestMethod1()
         {
-            Assert.Fail();
-        }
 
-        [TestMethod]
-        public void TestMethod2()
-        {
-            Assert.IsTrue(true);
         }
     }
 }
