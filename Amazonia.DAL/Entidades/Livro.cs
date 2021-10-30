@@ -2,7 +2,7 @@ namespace Amazonia.DAL.Entidades
 {
     public abstract class Livro : Entidade
     {
-        protected decimal Preco { get; set; }
+        public decimal Preco { protected get; set; }
         public string Descricao { get; set; }
         public string Autor { get; set; }
         public Idioma Idioma { get; set; }   //Portugues, Espanhol, Ingles
@@ -10,6 +10,13 @@ namespace Amazonia.DAL.Entidades
         public virtual decimal ObterPreco(){
             return Preco;
         }
+
+        //Alternativa com mais codigo
+        //protected decimal Preco {get; set; }
+        //public virtual void InformarPreco(decimal precoSemDesconto)
+        //{
+        //    Preco = precoSemDesconto;
+        //}
     }
 }
 
