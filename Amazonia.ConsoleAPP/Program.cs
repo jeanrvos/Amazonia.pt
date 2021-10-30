@@ -9,7 +9,7 @@ namespace Amazonia.ConsoleAPP
     {
         static void Main(string[] args)
         {
-            //    ListarClientes();
+            var chaveExemplo = ConfigurationManager.AppSettings["chaveExemplo"];
 
             var usarRegraNovaStr = ConfigurationManager.AppSettings["regraNovaAtiva"];
             var usarRegraNova = Convert.ToBoolean(usarRegraNovaStr);
